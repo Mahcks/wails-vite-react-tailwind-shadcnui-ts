@@ -1,0 +1,1 @@
+# wails-vite-react-tailwind-shadcnui-ts
