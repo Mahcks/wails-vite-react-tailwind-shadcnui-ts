@@ -1,9 +1,6 @@
-#! /bin/bash
+#!/bin/bash
+# Build for macOS (Intel - AMD64)
 
-echo -e "Start running the script..."
-cd ../
-
-echo -e "Start building the app for macos platform..."
-wails build --clean --platform darwin
-
-echo -e "End running the script!"
+echo "Building for macOS (amd64 - Intel)..."
+wails build -platform darwin/amd64 -clean
+echo "Build complete! Check build/bin/"

@@ -1,9 +1,6 @@
-#! /bin/bash
+#!/bin/bash
+# Build for Windows (AMD64)
 
-echo -e "Start running the script..."
-cd ../
-
-echo -e "Start building the app for windows platform..."
-wails build --clean --platform windows/amd64
-
-echo -e "End running the script!"
+echo "Building for Windows (amd64)..."
+wails build -platform windows/amd64 -clean
+echo "Build complete! Check build/bin/"
