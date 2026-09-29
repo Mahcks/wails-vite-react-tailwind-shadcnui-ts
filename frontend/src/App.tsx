@@ -1,6 +1,5 @@
 import { useState } from "react";
 import logo from "@/assets/images/logo-universal.png";
-import "@/index.css";
 import { Greet } from "../wailsjs/go/main/App";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -29,14 +28,14 @@ function App() {
     try {
       const result = await Greet(name);
       setResultText(result);
-    } catch (error) {
+    } catch {
       setResultText("Oops! Something went wrong. 😕");
     } finally {
       setIsLoading(false);
     }
   }
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
       greet();
     }
@@ -80,7 +79,7 @@ function App() {
                 placeholder="Enter your name..."
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                onKeyPress={handleKeyPress}
+                onKeyDown={handleKeyDown}
                 disabled={isLoading}
                 className="text-base h-11"
               />
@@ -116,7 +115,7 @@ function App() {
         {/* Footer */}
         <div className="text-center space-y-2">
           <p className="text-sm text-slate-600">
-            Built with ❤️ using Wails v2.11.0
+            Built with Wails
           </p>
           <p className="text-xs text-slate-500">
             Go backend • React frontend • Native desktop app

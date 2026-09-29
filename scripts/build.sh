@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # Simple production build for current platform
 
 echo "Building for production..."

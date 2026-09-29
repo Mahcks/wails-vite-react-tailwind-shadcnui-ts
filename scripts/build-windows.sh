@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # Build for Windows (AMD64)
 
 echo "Building for Windows (amd64)..."

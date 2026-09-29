@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # Build for macOS (Intel - AMD64)
 
 echo "Building for macOS (amd64 - Intel)..."

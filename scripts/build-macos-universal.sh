@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # Build universal macOS binary (Intel + Apple Silicon)
 
 echo "Building universal macOS binary..."

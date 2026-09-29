@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # Build for macOS (Apple Silicon - ARM64)
 
 echo "Building for macOS (arm64 - Apple Silicon)..."

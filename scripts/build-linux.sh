@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # Build for Linux (AMD64)
 
 echo "Building for Linux (amd64)..."
