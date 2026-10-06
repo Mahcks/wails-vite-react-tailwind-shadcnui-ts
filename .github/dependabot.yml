@@ -4,6 +4,10 @@ updates:
     directory: /frontend
     schedule:
       interval: weekly
+    # typescript-eslint currently requires TypeScript <6.1.0.
+    ignore:
+      - dependency-name: typescript
+        versions: ["7.x"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
